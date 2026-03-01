@@ -1,0 +1,10 @@
+{
+  "name": "NanoDit",
+  "board": "esp32s3",
+  "display": {
+    "matrix": [5, 5]
+  },
+  "buttons": ["A", "B"],
+  "serial": true,
+  "python": true
+}
