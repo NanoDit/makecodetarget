@@ -1,0 +1,18 @@
+{
+  "blockIcons": "built-in",
+  "accentColor": "#ffcc00",
+  "blockColors": {
+    "basic": "#0078d7",
+    "input": "#00a4ef",
+    "music": "#d40000",
+    "led": "#e3008c",
+    "loops": "#ff8c00",
+    "logic": "#4b0082",
+    "variables": "#8b0000",
+    "math": "#008000",
+    "radio": "#8a2be2"
+  },
+  "simulator": {
+    "background": "#1a1a1a"
+  }
+}
