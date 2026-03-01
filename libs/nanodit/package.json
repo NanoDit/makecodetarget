@@ -1,0 +1,13 @@
+{
+  "name": "nanodit",
+  "version": "0.0.1",
+  "description": "NanoDit runtime blocks and APIs for MakeCode.",
+  "files": [
+    "main.ts",
+    "shims.ts",
+    "README.md"
+  ],
+  "public": true,
+  "dependencies": {},
+  "license": "MIT"
+}

@@ -1,0 +1,69 @@
+{
+  "id": "nanodit",
+  "name": "NanoDit",
+  "title": "NanoDit MakeCode Editor",
+  "description": "Block and Python editor for the NanoDit ESP32-S3 board.",
+  "corepkg": "libs/nanodit",
+  "appTheme": "theme/theme.json",
+
+  "compile": {
+    "isNative": false,
+    "useUF2": false,
+    "useELF": false,
+    "useHex": false,
+    "webUSB": false,
+    "webSerial": true,
+    "deployDrives": [],
+    "deployFileName": "main.py"
+  },
+
+  "runtime": {
+    "python": true,
+    "simulator": true,
+    "nativeTypeScript": false
+  },
+
+  "simulator": {
+    "autoRun": true,
+    "root": "sim",
+    "boardDef": "simulator.json",
+    "parts": [],
+    "invertButtonColors": false
+  },
+
+  "blocksprj": {
+    "preferredEditor": "blocks",
+    "defaultExtension": "blocks"
+  },
+
+  "fileExtensions": [
+    "blocks",
+    "py",
+    "ts"
+  ],
+
+  "features": {
+    "serial": true,
+    "python": true,
+    "blocks": true,
+    "javascript": false,
+    "assets": false,
+    "highContrast": true,
+    "tutorials": true
+  },
+
+  "cloud": {
+    "workspace": true,
+    "github": true
+  },
+
+  "docs": {
+    "root": "docs",
+    "reference": "docs/reference"
+  },
+
+  "packages": {
+    "approvedRepos": [],
+    "allowUnapproved": true
+  }
+}
