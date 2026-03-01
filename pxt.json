@@ -1,0 +1,8 @@
+{
+  "name": "nanodit",
+  "description": "NanoDit MakeCode Target",
+  "version": "0.0.1",
+  "dependencies": {
+    "core": "*"
+  }
+}
