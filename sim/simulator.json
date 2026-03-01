@@ -1,0 +1,10 @@
+{
+  "autoRun": true,
+  "root": ".",
+  "parts": [],
+  "simulator": {
+    "html": "simulator.html",
+    "css": "style.css",
+    "js": "simulator.js"
+  }
+}
