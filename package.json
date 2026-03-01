@@ -1,0 +1,8 @@
+{
+  "name": "makecodetarget",
+  "version": "0.0.1",
+  "description": "NanoDit MakeCode target",
+  "dependencies": {
+    "pxt-core": "latest"
+  }
+}
