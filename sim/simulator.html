@@ -1,0 +1,23 @@
+<div id="nanodit-sim">
+    <div id="board">
+        <div id="led-grid">
+            <!-- 5x5 LED matrix -->
+            <script>
+                for (let y = 0; y < 5; y++) {
+                    for (let x = 0; x < 5; x++) {
+                        document.write(`<div class="pixel" id="px-${x}-${y}"></div>`);
+                    }
+                }
+            </script>
+        </div>
+
+        <!-- Buttons -->
+        <div id="buttons">
+            <div id="btnA" class="button">A</div>
+            <div id="btnB" class="button">B</div>
+        </div>
+
+        <!-- Speaker -->
+        <div id="speaker">🔊</div>
+    </div>
+</div>

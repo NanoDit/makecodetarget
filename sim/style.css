@@ -1,0 +1,60 @@
+#nanodit-sim {
+    width: 260px;
+    margin: 0 auto;
+    font-family: sans-serif;
+}
+
+#board {
+    background: #222;
+    padding: 20px;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+}
+
+#led-grid {
+    width: 150px;
+    height: 150px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 6px;
+    margin: 0 auto 20px auto;
+}
+
+.pixel {
+    width: 24px;
+    height: 24px;
+    background: #ff0044;
+    border-radius: 4px;
+    opacity: 0.15;
+    transition: opacity 0.1s;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.button {
+    width: 50px;
+    height: 40px;
+    background: #444;
+    color: white;
+    border-radius: 8px;
+    line-height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.button:active {
+    background: #666;
+}
+
+#speaker {
+    margin-top: 15px;
+    font-size: 28px;
+    opacity: 0.3;
+    transition: opacity 0.2s;
+}

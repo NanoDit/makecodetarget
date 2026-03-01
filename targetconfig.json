@@ -1,10 +1,48 @@
 {
   "name": "NanoDit",
-  "board": "esp32s3",
-  "display": {
-    "matrix": [5, 5]
+  "id": "nanodit",
+  "boardDefinition": {
+    "processor": "esp32s3",
+    "arch": "xtensa",
+    "flashSize": "8MB",
+    "ramSize": "512KB"
   },
-  "buttons": ["A", "B"],
-  "serial": true,
-  "python": true
+  "display": {
+    "type": "ledmatrix",
+    "width": 5,
+    "height": 5,
+    "pinRows": [4, 5, 6, 7, 8],
+    "pinCols": [9, 10, 11, 12, 13]
+  },
+  "buttons": {
+    "A": 1,
+    "B": 2
+  },
+  "i2c": {
+    "sda": 17,
+    "scl": 18,
+    "devices": [
+      {
+        "name": "accelerometer",
+        "address": "0x19"
+      },
+      {
+        "name": "magnetometer",
+        "address": "0x1E"
+      }
+    ]
+  },
+  "serial": {
+    "useWebSerial": true,
+    "baudRate": 115200
+  },
+  "python": {
+    "enabled": true,
+    "runtimeFile": "nanodit.py"
+  },
+  "compile": {
+    "useUF2": false,
+    "useHex": false,
+    "useELF": false
+  }
 }

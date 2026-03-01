@@ -1,0 +1,74 @@
+<svg width="350" height="480" viewBox="0 0 350 480" xmlns="http://www.w3.org/2000/svg">
+
+  <!-- Board background -->
+  <rect x="0" y="0" width="350" height="480" rx="25" fill="#1a1a1a"/>
+
+  <!-- Colored strip (micro:bit style) -->
+  <rect x="0" y="360" width="350" height="80" fill="#ffcc00"/>
+
+  <!-- Pin labels -->
+  <text x="35" y="395" font-size="18" fill="#000" text-anchor="middle">0</text>
+  <text x="105" y="395" font-size="18" fill="#000" text-anchor="middle">1</text>
+  <text x="175" y="395" font-size="18" fill="#000" text-anchor="middle">2</text>
+  <text x="245" y="395" font-size="18" fill="#000" text-anchor="middle">3V</text>
+  <text x="315" y="395" font-size="18" fill="#000" text-anchor="middle">GND</text>
+
+  <!-- Gold pin edge connector -->
+  <rect x="0" y="420" width="350" height="60" fill="#d4a017"/>
+
+  <!-- Pin holes -->
+  <circle cx="35" cy="450" r="18" fill="#000" stroke="#333" stroke-width="4"/>
+  <circle cx="105" cy="450" r="18" fill="#000" stroke="#333" stroke-width="4"/>
+  <circle cx="175" cy="450" r="18" fill="#000" stroke="#333" stroke-width="4"/>
+  <circle cx="245" cy="450" r="18" fill="#000" stroke="#333" stroke-width="4"/>
+  <circle cx="315" cy="450" r="18" fill="#000" stroke="#333" stroke-width="4"/>
+
+  <!-- NanoDit logo -->
+  <text x="175" y="45" font-size="32" fill="#ffffff" text-anchor="middle" font-family="Arial">
+    NanoDit
+  </text>
+
+  <!-- LED matrix window -->
+  <rect x="75" y="80" width="200" height="200" rx="20" fill="#111" stroke="#444" stroke-width="4"/>
+
+  <!-- 5x5 LED placeholders -->
+  <g id="leds" fill="#ff0044">
+    <script type="text/ecmascript"><![CDATA[
+      let svg = document.currentScript.ownerDocument;
+      let g = svg.getElementById("leds");
+      for (let y = 0; y < 5; y++) {
+        for (let x = 0; x < 5; x++) {
+          let cx = 115 + x * 40;
+          let cy = 120 + y * 40;
+          let c = svg.createElementNS("http://www.w3.org/2000/svg", "circle");
+          c.setAttribute("cx", cx);
+          c.setAttribute("cy", cy);
+          c.setAttribute("r", "12");
+          c.setAttribute("opacity", "0.15");
+          c.setAttribute("id", `px-${x}-${y}`);
+          g.appendChild(c);
+        }
+      }
+    ]]></script>
+  </g>
+
+  <!-- Button A -->
+  <circle id="btnA" cx="90" cy="320" r="28" fill="#444" stroke="#777" stroke-width="4"/>
+  <text x="90" y="328" font-size="24" fill="#fff" text-anchor="middle" font-family="Arial">A</text>
+
+  <!-- Button B -->
+  <circle id="btnB" cx="260" cy="320" r="28" fill="#444" stroke="#777" stroke-width="4"/>
+  <text x="260" y="328" font-size="24" fill="#fff" text-anchor="middle" font-family="Arial">B</text>
+
+  <!-- Speaker icon -->
+  <text id="speaker" x="175" y="330" font-size="40" fill="#fff" text-anchor="middle" opacity="0.3">
+    🔊
+  </text>
+
+  <!-- Mounting holes -->
+  <circle cx="40" cy="40" r="12" fill="#000" stroke="#555" stroke-width="3"/>
+  <circle cx="310" cy="40" r="12" fill="#000" stroke="#555" stroke-width="3"/>
+  <circle cx="40" cy="350" r="12" fill="#000" stroke="#555" stroke-width="3"/>
+  <circle cx="310" cy="350" r="12" fill="#000" stroke="#555" stroke-width="3"/>
+
+</svg>
